@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="flickr-application"  ></div>
+
+
+<script src="js/FlickrImageGallery.js"></script>
+<script>
+
+    var APP = {
+        API_KEY : "5f6b7d95c2f4f1507455e09b8f9019b0"
+    };
+
+
+    window.onload = function () {
+
+        var flickrImageGallery = new FlickrImageGallery();
+        flickrImageGallery.init({
+            api_key: APP.API_KEY
+        });
+
+
+
+
+    };
+</script>
+
+</body>
+</html>
